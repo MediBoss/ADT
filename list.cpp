@@ -13,7 +13,7 @@ ListType::ListType(int array[], int length){
   
 }
 
-bool ListType:: isEmpty(){
+bool ListType:: isEmpty() const{
   
  for(int i = 0; i < this->length; i++){
     //if there's at least one lement in the list
