@@ -2,7 +2,7 @@
 
 using namespace std;
 
-class listType
+class ListType
 {
 
     public:
@@ -14,7 +14,7 @@ class listType
         void removeElement(int element);
         void destroyList();
         void printList();
-        listType();//constructor
+        ListType();//constructor
 
     private: //private members
 
