@@ -18,7 +18,7 @@ class ListType
 
     private: //private members
 
-        int list[100];
+        int list[];
         int length;
 
 };
