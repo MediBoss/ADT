@@ -27,3 +27,7 @@ bool ListType:: isEmpty() const{
   return true; //returns true if each index of the array does not contain an element or elemnt is zero
 }
 
+bool ListType:: isFull() const{
+  
+  //code goes here 
+}
