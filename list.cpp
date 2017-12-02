@@ -52,4 +52,7 @@ void ListType:: destroyList()
  //code goes here 
 }
 
+void ListType:: printList()
+  //code goes here 
+}
 
