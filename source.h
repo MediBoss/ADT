@@ -14,7 +14,9 @@ class ListType
         void removeElement(int element);// this function removes an lement in the list
         void destroyList();// this elemnts eradicates the entire list and its elements
         void printList();// this function prints the entire list
-        ListType();//constructor
+        ListType();//default constructor
+        ListType(int& array[], int length); //constructor with parameters
+        ~ListType(); // destructor
 
     private: //private members
 
