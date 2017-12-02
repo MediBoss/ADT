@@ -29,9 +29,25 @@ bool ListType:: isEmpty() const{
 }
 
 bool ListType:: isFull() const{
+  //algorithm
   
-  //code goes here 
+  //loop trough array
+  //if all indexes does not have an elemnet of zero
+  //then the list is full
+  //else it's not full
+  
+  for(int i = 0; i < this->length; i++){
+    
+      if(this->list[i] != NULL)
+          continue;  
+      }else{
+        return false;
+    }
+  }
+  return true;
 }
+
+
 //@param item is the integer to be searched
 int ListType:: searchList(int item) const{
   
