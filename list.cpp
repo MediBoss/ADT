@@ -1,8 +1,5 @@
 #include "source.h"
 using namespace std;
-
-using namespace std;
-
 //implementation of the list class/ADT
 
 //@param array[] is the array to be passed and @param length is the length of the array
