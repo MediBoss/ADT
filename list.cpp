@@ -31,3 +31,10 @@ bool ListType:: isFull() const{
   
   //code goes here 
 }
+//@param item is the integer to be searched
+int ListType:: searchList(int item) const{
+  
+  //code goes here
+}
+
+
