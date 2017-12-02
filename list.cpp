@@ -50,6 +50,7 @@ void ListType:: removeElement(int elem){
 
 void ListType:: destroyList()
  //code goes here 
+  ~ListType();
 }
 
 void ListType:: printList()
