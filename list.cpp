@@ -14,6 +14,7 @@ ListType::ListType(int& array[], int length){
   
 }
 
+//this function checks if the array is empty
 bool ListType:: isEmpty() const{
   
  for(int i = 0; i < this->length; i++){
@@ -28,6 +29,7 @@ bool ListType:: isEmpty() const{
   return true; //returns true if each index of the array does not contain an element or elemnt is zero
 }
 
+//this function checks if the array is full
 bool ListType:: isFull() const{
   //algorithm
   
@@ -47,11 +49,18 @@ bool ListType:: isFull() const{
   return true;
 }
 
+static inline void ListType :: swap(int& a, int& b){ this function swaps two values
+    // code goes here 
+}
+
+//this function sorts the list
 ListType:: sortList(){
   //imlementing selection sort for better performance
 }
 
+
 //@param item is the integer to be searched
+//this func searches the list for a specific element
 int ListType:: searchList(int item) const{
   
   //imlementing binary search to save time and amount of looping
@@ -59,22 +68,28 @@ int ListType:: searchList(int item) const{
   //therefore the array must be sorted firs
   
 }
+
+//this function inserts an element in the array
 //@param elem the element to be inserted in the list
 void ListType:: insertElement(int elem){
   
  //code goes here 
 }
+
+//this function removes an elemnet from the array
 //@param elem is the element  to be remved from the list
 void ListType:: removeElement(int elem){
   
  //goes here 
 }
 
+//this functions calls the destructor
 void ListType:: destroyList()
  //code goes here 
   ~ListType();
 }
 
+//this function prints each elemnt of the list
 void ListType:: printList()
   //code goes here 
 }
