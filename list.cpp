@@ -47,11 +47,17 @@ bool ListType:: isFull() const{
   return true;
 }
 
+ListType:: sortList(){
+  //imlementing selection sort for better performance
+}
 
 //@param item is the integer to be searched
 int ListType:: searchList(int item) const{
   
-  //code goes here
+  //imlementing binary search to save time and amount of looping
+  //best scenario, array is sorted in ascding order, 
+  //therefore the array must be sorted firs
+  
 }
 //@param elem the element to be inserted in the list
 void ListType:: insertElement(int elem){
