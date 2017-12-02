@@ -41,5 +41,10 @@ void ListType:: insertElement(int elem){
   
  //code goes here 
 }
+//@param elem is the element  to be remved from the list
+void ListType:: removeElement(int elem){
+  
+ //goes here 
+}
 
 
