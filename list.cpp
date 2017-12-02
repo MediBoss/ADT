@@ -36,5 +36,10 @@ int ListType:: searchList(int item) const{
   
   //code goes here
 }
+//@param elem the element to be inserted in the list
+void ListType:: insertElement(int elem){
+  
+ //code goes here 
+}
 
 
