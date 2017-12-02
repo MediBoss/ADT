@@ -48,4 +48,8 @@ void ListType:: removeElement(int elem){
  //goes here 
 }
 
+void ListType:: destroyList()
+ //code goes here 
+}
+
 
