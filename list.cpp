@@ -63,7 +63,10 @@ ListType:: sortList(){
       for(index < this->length; index++){
         
         index = smallestIndex;// assumnig that thefirst index is the smallest index
-        //continue here
+          
+          for(loc = index+1; loc < this->length; loc++){
+            
+           }
       }
 }
 
