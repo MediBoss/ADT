@@ -46,7 +46,7 @@ bool ListType:: isFull() const{
   return true;
 }
 
-static inline void ListType :: swap(int& a, int& b){ this function swaps two values
+static inline void ListType :: swap(int& a, int& b){ //this function swaps two values
     // code goes here 
   int temp = b;
   b = a;
