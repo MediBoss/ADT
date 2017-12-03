@@ -13,8 +13,13 @@ class ListType
         // this function checks if the list is full
         //postcondition : true is returned if the array is full and false is returned if the array isn't
   
-        int searchList(int item)const;// this function searches the list for a specific element (integer)
-        static inline void swap(int& a, int& b); // this is an helper function to the sort function to swap two values
+        int searchList(int item)const;
+        // this function searches the list for a specific element (integer)
+        //post condition : The index/position/location of the item is returned
+  
+        static inline void swap(int& a, int& b); 
+        // this is an helper function to the sort function to swap two values
+        //postcondition : the values of a and b are swaped
         void sortList(); // this function will implement the selction sort to arrange the array
         void insertElement(int new_element);// this function adds an element in the list
         void removeElement(int element);// this function removes an lement in the list
