@@ -20,8 +20,15 @@ class ListType
         static inline void swap(int& a, int& b); 
         // this is an helper function to the sort function to swap two values
         //postcondition : the values of a and b are swaped
-        void sortList(); // this function will implement the selction sort to arrange the array
-        void insertElement(int new_element);// this function adds an element in the list
+  
+        void sortList();
+        // this function will implement the selction sort to arrange the array
+        //postcondition : The list will be sorted in ascending order
+  
+        void insertElement(int new_element);
+        // this function adds an element in the list
+        //postcondition : The new elemnt will be inserted in the open/free index
+  
         void removeElement(int element);// this function removes an lement in the list
         void destroyList();// this elemnts eradicates the entire list and its elements
         void printList();// this function prints the entire list
