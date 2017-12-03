@@ -56,6 +56,10 @@ static inline void ListType :: swap(int& a, int& b){ //this function swaps two v
 //this function sorts the list
 ListType:: sortList(){
   //imlementing selection sort for better performance
+  int loc;
+  int index;
+  int smallestTindex;
+  //continue here
 }
 
 
@@ -65,7 +69,7 @@ int ListType:: searchList(int item) const{
   
   //imlementing binary search to save time and amount of looping
   //best scenario, array is sorted in ascding order, 
-  //therefore the array must be sorted firs
+  //therefore the array must be sorted first
   
 }
 
