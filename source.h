@@ -1,9 +1,5 @@
                 //THIS IS THE HEADER FILE
 
-#include <iostream>
-
-using namespace std;
-
 class ListType
 {
 
