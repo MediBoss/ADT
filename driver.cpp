@@ -7,6 +7,8 @@ using namespace std;
     
 
 int main(){
+    
+    ListType
 
     return 0;
 }
