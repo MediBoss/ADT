@@ -11,7 +11,7 @@ int main(){
     int array[];
     int size;
     
-    ListType myList(array,size);
+    ListType myList(array,size); // an object of type ListType
 
     return 0;
 }
