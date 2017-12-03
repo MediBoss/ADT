@@ -29,8 +29,14 @@ class ListType
         // this function adds an element in the list
         //postcondition : The new elemnt will be inserted in the open/free index
   
-        void removeElement(int element);// this function removes an lement in the list
-        void destroyList();// this elemnts eradicates the entire list and its elements
+        void removeElement(int element);
+        // this function removes an lement in the list
+        //postcondition : The element passed an argument will be removed from the araray
+  
+        void destroyList();
+        // this function eradicates the entire list and its elements
+        //postcondition : The list will be destroyed
+  
         void printList();// this function prints the entire list
         ListType();//default constructor
         ListType(int& array[], int length); //constructor with parameters
