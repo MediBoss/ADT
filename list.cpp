@@ -65,10 +65,15 @@ ListType:: sortList(){
         index = smallestIndex;// assumnig that thefirst index is the smallest index
           
           for(loc = index+1; loc < this->length; loc++){
-            
+              if(this->list[loc] < this->list[smallestIndex]){
+                  smallestIndex = loc;//the current location now is the smallest index
+                
+                  //swaping the element in the smallestIndex and the elemnt in the current index
+                  this->swap(this->list[smallestIndex] , this->list[index]);
+              }
            }
       }
-}
+}//end of list sorting
 
 
 //@param item is the integer to be searched
