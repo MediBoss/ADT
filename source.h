@@ -1,4 +1,4 @@
-                //THIS IS THE IMPLEMENTATION FILE
+                //THIS IS THE HEADER FILE
 
 #include <iostream>
 
