@@ -59,7 +59,12 @@ ListType:: sortList(){
   int loc;
   int index;
   int smallestTindex;
-  //continue here
+  
+      for(index = 0; index < ){
+        
+        index = smallestIndex;
+        //continue here
+      }
 }
 
 
