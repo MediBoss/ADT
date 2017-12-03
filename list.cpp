@@ -60,9 +60,9 @@ ListType:: sortList(){
   int index;
   int smallestTindex;
   
-      for(index = 0; index < ){
+      for(index < this->length; index++){
         
-        index = smallestIndex;
+        index = smallestIndex;// assumnig that thefirst index is the smallest index
         //continue here
       }
 }
