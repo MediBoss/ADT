@@ -88,6 +88,11 @@ int ListType:: searchList(int item) const{
   //therefore the array must be sorted first
   sortList(); // this function will sort the list
   
+  int max = this->length - 1;
+  int min = 0;
+  
+  for(int i = 0; i < this-)
+  // pick up here
 }
 
 //this function inserts an element in the array
