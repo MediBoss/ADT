@@ -109,8 +109,11 @@ void ListType:: destroyList()
   ~ListType();
 }
 
-//this function prints each elemnt of the list
+//this function prints each element of the list
 void ListType:: printList()
   //code goes here 
+  for(int i = 0; i < this->length; i++){
+    std::cout<<this->list[i]; 
+  }
 }
 
