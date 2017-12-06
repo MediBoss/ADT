@@ -59,9 +59,9 @@ static inline void ListType :: swap(int& a, int& b){ //this function swaps two v
 //this function sorts the list
 ListType:: sortList(){
   //imlementing selection sort for better performance
-  int loc;
-  int index;
-  int smallestTindex;
+  int loc; //will store the current location
+  int index; // store the index
+  int smallestTindex; // store the smallest index
   
       for(index < this->length; index++){
         
