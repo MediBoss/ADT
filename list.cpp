@@ -86,6 +86,7 @@ int ListType:: searchList(int item) const{
   //imlementing binary search to save time and amount of looping
   //best scenario, array is sorted in ascding order, 
   //therefore the array must be sorted first
+  sortList(); // this function will sort the list
   
 }
 
