@@ -27,13 +27,17 @@ ListType::ListType(int& array[], int length){
 //this function checks if the array is empty
 bool ListType:: isEmpty() const{
   
+  
  for(int i = 0; i < this->length; i++){
     //if there's at least one lement in the list
-        if(this.>list[i] != NULL){
+        if(this->list[i] == 0){
    //then the list is not empty
           return false; 
+
         }else{
-         continue;// increment the indexand go to the elemnet 
+
+         continue;// increment the indexand go to the element 
+
         }
    }
   return true; //returns true if each index of the array does not contain an element or elemnt is zero
