@@ -8,9 +8,20 @@ using namespace std;
 //@param array[] is the array to be passed and @param length is the length of the array
 ListType::ListType(int& array[], int length){
   
-  //initializing the members
-  this->list[]= array[];
+  //initializing the member
   this->legth[]= length;
+  
+  ListType::ListType(int array[], int length){
+  
+  //initializing the members
+  this->length = length;
+
+  for(int i = 0; i < this-> length; i++){
+    
+    this->list[i] = array[i];
+
+  }
+
   
 }
 
