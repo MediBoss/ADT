@@ -65,7 +65,7 @@ bool ListType:: isFull() const{
   return true;
 }
 
- void ListType :: swap(int& a, int& b){ //this function swaps two values
+ void ListType :: swap(int& a, int& b){ //this function swaps two values. This is an helper function for the SearchList() function
     // code goes here 
   int temp = b;
   b = a;
