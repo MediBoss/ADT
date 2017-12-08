@@ -75,20 +75,20 @@ bool ListType:: isFull() const{
 //this function sorts the list
 void ListType:: sortList(){
   //imlementing selection sort for better performance
-  int loc;
-  int index;
-  int smallestIndex;
+  int loc; //  stores the current location
+  int index;// stores the current index
+  int smallestIndex; //  stores the smallest index
   
       for(index = 0; index < this->length; index++){
         
         index = smallestIndex;// assumnig that thefirst index is the smallest index
           
           for(loc = index+1; loc < this->length; loc++){
-              if(this->list[loc] < this->list[smallestIndex]){
+              if(this->list[loc] < this->list[smallestIndex]){//if the elemnet in the location is smallest than the elemnt in the smallest index
                   smallestIndex = loc;//the current location now is the smallest index
                 
                   //swaping the element in the smallestIndex and the elemnt in the current index
-                  this->swap(this->list[smallestIndex] , this->list[index]);
+                  this->swap(this->list[smallestIndex] , this->list[index]); // a call to the function swap
               }
            }
       }
