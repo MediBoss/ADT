@@ -45,7 +45,7 @@ bool ListType:: isEmpty() const{
 
 //this function checks if the array is full
 bool ListType:: isFull() const{
-  //algorithm
+   //****Algorithm****
   
   //loop trough array
   //if all indexes does not have an elemnet of zero
