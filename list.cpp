@@ -18,11 +18,10 @@ ListType::ListType(int& array[], int length){
 
   for(int i = 0; i < this-> length; i++){
     
-    this->list[i] = array[i];
+    this->list[i] = array[i]; //initializes every element of the array
 
   }
 
-  
 }
 
 //this function checks if the array is empty
