@@ -59,13 +59,13 @@ bool ListType:: isFull() const{
 
       }else{
 
-        return false;
+        return false; //returns false if the current index is empty, which means the array is not empty
     }
   }
   return true;
 }
 
-static inline void ListType :: swap(int& a, int& b){ //this function swaps two values
+ void ListType :: swap(int& a, int& b){ //this function swaps two values
     // code goes here 
   int temp = b;
   b = a;
