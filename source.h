@@ -44,7 +44,7 @@ class ListType
 
     private: //private members
 
-        int list[];//variable to store the array
+        int list[100];//variable to store the array
         int length; // variable to store the length of the array
 
 };
