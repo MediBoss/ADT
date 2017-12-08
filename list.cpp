@@ -55,7 +55,7 @@ bool ListType:: isFull() const{
     
       if(this->list[i] != 0){
 
-          continue; 
+          continue; //the loop continues if the current index is not empty
 
       }else{
 
