@@ -73,13 +73,13 @@ bool ListType:: isFull() const{
 }
 
 //this function sorts the list
-ListType:: sortList(){
+void ListType:: sortList(){
   //imlementing selection sort for better performance
-  int loc; //will store the current location
-  int index; // store the index
-  int smallestTindex; // store the smallest index
+  int loc;
+  int index;
+  int smallestIndex;
   
-      for(index < this->length; index++){
+      for(index = 0; index < this->length; index++){
         
         index = smallestIndex;// assumnig that thefirst index is the smallest index
           
@@ -93,6 +93,7 @@ ListType:: sortList(){
            }
       }
 }//end of list sorting
+
 
 
 //@param item is the integer to be searched
