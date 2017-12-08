@@ -51,12 +51,14 @@ bool ListType:: isFull() const{
   //if all indexes does not have an elemnet of zero
   //then the list is full
   //else it's not full
-  
-  for(int i = 0; i < this->length; i++){
+   for(int i = 0; i < this->length; i++){
     
-      if(this->list[i] != NULL)
-          continue;  
+      if(this->list[i] != 0){
+
+          continue; 
+
       }else{
+
         return false;
     }
   }
