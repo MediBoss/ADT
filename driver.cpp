@@ -12,6 +12,9 @@ int main(){
     int size;
     
     ListType myList(array,size); // an object of type ListType
+    
+    myList.isEmpty();
+    myList.isFull();
 
-    return 0;
+    return 0
 }
