@@ -126,7 +126,9 @@ void ListType:: insertElement(int elem){
 void ListType:: removeElement(int elem){
   
  //****algorith*****
-  
+  //loop through the list
+  //find the element
+  // remove it by replacing it with 0
 }
 
 //this functions calls the destructor
