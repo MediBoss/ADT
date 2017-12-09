@@ -125,7 +125,8 @@ void ListType:: insertElement(int elem){
 //@param elem is the element  to be remved from the list
 void ListType:: removeElement(int elem){
   
- //goes here 
+ //****algorith*****
+  
 }
 
 //this functions calls the destructor
