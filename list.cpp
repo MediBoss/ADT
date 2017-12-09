@@ -108,8 +108,10 @@ int ListType:: searchList(int item) const{
   int max = this->length - 1;
   int min = 0;
   
-  for(int i = 0; i < this-)
+  for(int i = 0; i < this->length; i++){
   // pick up here
+    
+  }
 }
 
 //this function inserts an element in the array
