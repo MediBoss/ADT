@@ -8,7 +8,7 @@ using namespace std;
 
 int main(){
     
-    int array[];
+    int array[100];
     int size;
     
     ListType myList(array,size); // an object of type ListType
