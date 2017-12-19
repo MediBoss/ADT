@@ -15,6 +15,7 @@ int main(){
     
     myList.isEmpty();
     myList.isFull();
+    myList.sortList();
 
     return 0;
 }
