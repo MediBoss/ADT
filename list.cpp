@@ -126,6 +126,8 @@ int ListType:: searchList(int item) const{
         high = middle - 1;// we decrement the higher index
       }
   }
+  
+  return -1; // -1 is returned if the elemnt is not in the list
 }
 
 //this function inserts an element in the array
