@@ -114,9 +114,16 @@ int ListType:: searchList(int item) const{
     
     int currValue= this->list[middle];// the current value
     
-      if(currentIndex == item){ //checks if the current 
+      if(currentValue == item){ //checks if the current 
         
         return currentIndex; // the position of the wnted number is returned
+        
+      }else if(currentValue < item){ //if the current number is less
+          
+        low = middle + 1; //we increment the lower index
+      }else{
+        
+        high = middle + 1;// we increment the higher index
       }
   }
 }
