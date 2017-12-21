@@ -112,7 +112,12 @@ int ListType:: searchList(int item) const{
     
     int middle = (int)(low+high)/2;// to store the middle index
     
-    int currIndex = this->list[middle];
+    int currValue= this->list[middle];// the current value
+    
+      if(currentIndex == item){ //checks if the current 
+        
+        return currentIndex; // the position of the wnted number is returned
+      }
   }
 }
 
