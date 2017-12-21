@@ -123,7 +123,7 @@ int ListType:: searchList(int item) const{
         low = middle + 1; //we increment the lower index
       }else{
         
-        high = middle + 1;// we increment the higher index
+        high = middle - 1;// we decrement the higher index
       }
   }
 }
