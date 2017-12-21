@@ -110,6 +110,7 @@ int ListType:: searchList(int item) const{
   
   while(low <= high){
     
+    int middle = (int)(low+high)/2;// to store the middle index
   }
 }
 
