@@ -105,11 +105,10 @@ int ListType:: searchList(int item) const{
   //therefore the array must be sorted first
   sortList(); // this function will sort the list
   
-  int max = this->length - 1;
-  int min = 0;
+  int high = this->length - 1;
+  int low = 0;
   
-  for(int i = 0; i < this->length; i++){
-  // pick up here
+  while(low <= high){
     
   }
 }
