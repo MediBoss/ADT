@@ -46,7 +46,9 @@ class ListType
         // this function eradicates the entire list and its elements
         //postcondition : The list will be destroyed
   
-        void printList();// this function prints the entire list
+        void printList() const;
+        // this function prints the entire list
+        //postcondition : All elemnets of the list is printed
         ListType();//default constructor
         ListType(int& array[], int length); //constructor with parameters
         ~ListType(); // destructor
