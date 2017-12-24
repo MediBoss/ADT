@@ -54,9 +54,9 @@ class List
      void printList() const;
      // this function prints the entire list
      //postcondition : All elemnets of the list is printed
-     ListType();//default constructor
-     ListType(int& array[], int length); //constructor with parameters
-     ~ListType(); // destructor
+     List();//default constructor
+     List(int array[], int length); //constructor with parameters
+     ~List(); // destructor
 
  private: //private members
 
