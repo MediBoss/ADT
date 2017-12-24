@@ -21,6 +21,11 @@ class ListType
         //this function checks the size of the List
         //postcondition : The length is returned
   
+         int maxListSize() const;
+          //function to check the maximum list list
+         //postcondition : an integer representing the max length is returned
+     
+  
         static inline void swap(int& a, int& b); 
         // this is an helper function to the sort function to swap two values
         //postcondition : the values of a and b are swaped
