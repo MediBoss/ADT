@@ -1,61 +1,66 @@
-                //THIS IS THE HEADER FILE
+//THIS IS THE HEADER FILE
 
-class ListType
+class List
 {
 
-    public:
-            //public members
-        bool isEmpty()const;
-         // this function checks if the list is empty
-         //postcondition : true is returned if the array is empty and false is returned if the array isn't
-  
-        bool isFull()const;
-        // this function checks if the list is full
-        //postcondition : true is returned if the array is full and false is returned if the array isn't
-  
-        int searchList(int item)const;
-        // this function searches the list for a specific element (integer)
-        //post condition : The index/position/location of the item is returned
-  
-        int listSize() const;
-        //this function checks the size of the List
-        //postcondition : The length is returned
-  
-         int maxListSize() const;
-          //function to check the maximum list list
-         //postcondition : an integer representing the max length is returned
-     
-  
-        static inline void swap(int& a, int& b); 
-        // this is an helper function to the sort function to swap two values
-        //postcondition : the values of a and b are swaped
-  
-        void sortList();
-        // this function will implement the selction sort to arrange the array
-        //postcondition : The list will be sorted in ascending order
-  
-        void insertElement(int new_element);
-        // this function adds an element in the list
-        //postcondition : The new elemnt will be inserted in the open/free index
-  
-        void removeElement(int element);
-        // this function removes an lement in the list
-        //postcondition : The element passed an argument will be removed from the araray
-  
-        void destroyList();
-        // this function eradicates the entire list and its elements
-        //postcondition : The list will be destroyed
-  
-        void printList() const;
-        // this function prints the entire list
-        //postcondition : All elemnets of the list is printed
-        ListType();//default constructor
-        ListType(int& array[], int length); //constructor with parameters
-        ~ListType(); // destructor
+ public:
+         //public members
+     bool isEmpty()const;
+      // this function checks if the list is empty
+      //postcondition : true is returned if the array is empty and false is returned if the array isn't
 
-    private: //private members
+     bool isFull()const;
+     // this function checks if the list is full
+     //postcondition : true is returned if the array is full and false is returned if the array isn't
 
-        int list[100];//variable to store the array
-        int length; // variable to store the length of the array
+     int listSize() const;
+     //this function checks the size of the List
+     //postcondition : The length is returned
+
+     int maxListSize() const;
+     //function to check the maximum list list
+     //postcondition : an integer representing the max length is returned
+
+
+     int searchList(int item)const;
+     // this function searches the list for a specific element (integer)
+     //post condition : The index/position/location of the item is returned
+
+     static inline void swap(int& a, int& b);
+     // this is an helper function to the sort function to swap two values
+     //postcondition : the values of a and b are swaped
+
+     bool isItemEqualAt(int item, int location) const;
+     //this function checks if the current item at location is equal to item
+     // a true or false statement is returned
+
+     void sortList();
+     // this function will implement the selction sort to arrange the array
+     //postcondition : The list will be sorted in ascending order
+
+     void insertElement(int new_element);
+     // this function adds an element in the list
+     //postcondition : The new elemnt will be inserted in the open/free index
+
+     virtual void removeElement(int element) = 0;
+     // this function removes an lement in the list
+     //postcondition : The element passed an argument will be removed from the array if found
+     //the length is decremented by one
+
+     void clearList();
+     // this function eradicates the entire list and its elements
+     //postcondition : The list will be destroyed
+
+     void printList() const;
+     // this function prints the entire list
+     //postcondition : All elemnets of the list is printed
+     ListType();//default constructor
+     ListType(int& array[], int length); //constructor with parameters
+     ~ListType(); // destructor
+
+ private: //private members
+
+     int list[100];//variable to store the array
+     int length; // variable to store the length of the array
 
 };
