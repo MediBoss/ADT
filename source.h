@@ -59,7 +59,7 @@ class List
      // this function prints the entire list
      //postcondition : All elemnets of the list is printed
 
-     
+
      List(int length = 100);
      //creates an array with a specified size as parameter
      //the default size is 100
@@ -71,9 +71,10 @@ class List
      // destructor
      //destroys/deallocates the list
 
- private: //private members
+ protected:
 
-     int list[100];//variable to store the array
+     int *list; //the pointer varaible to store the list elements
      int length; // variable to store the length of the array
+     int maxSize; // this variable stores the maximum size of the list
 
 };
