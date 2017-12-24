@@ -21,6 +21,10 @@ class List
      //function to check the maximum list list
      //postcondition : an integer representing the max length is returned
 
+     virtual void replaceAt(int item, int loc) = 0;
+     //function to replace a specified elemnt at a specified postcondition
+     //postcondition : The element is replaced at loc
+
 
      int searchList(int item)const;
      // this function searches the list for a specific element (integer)
@@ -54,9 +58,18 @@ class List
      void printList() const;
      // this function prints the entire list
      //postcondition : All elemnets of the list is printed
-     List();//default constructor
-     List(int array[], int length); //constructor with parameters
-     ~List(); // destructor
+
+     
+     List(int length = 100);
+     //creates an array with a specified size as parameter
+     //the default size is 100
+
+     List(const List& otherList);
+     //the copy constructor
+
+     virtual ~List();
+     // destructor
+     //destroys/deallocates the list
 
  private: //private members
 
