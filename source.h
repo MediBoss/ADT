@@ -17,6 +17,10 @@ class ListType
         // this function searches the list for a specific element (integer)
         //post condition : The index/position/location of the item is returned
   
+        int listSize() const;
+        //this function checks the size of the List
+        //postcondition : The length is returned
+  
         static inline void swap(int& a, int& b); 
         // this is an helper function to the sort function to swap two values
         //postcondition : the values of a and b are swaped
