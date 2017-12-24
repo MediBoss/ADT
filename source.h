@@ -1,4 +1,4 @@
-//THIS IS THE HEADER FILE
+///THIS IS THE HEADER FILE
 
 //Abstract functions will be implemented in sortedList and unsortedList clss
 
@@ -37,7 +37,7 @@ class List
      //postcondition : the values of a and b are swaped
 
      bool isItemEqualAt(int item, int location) const;
-     //this function checks if the current item at location is equal to item
+     //this function checks if the item at location is equal to item
      // a true or false statement is returned
 
      void sortList();
@@ -48,9 +48,9 @@ class List
      // this function adds an element in the list
      //postcondition : The new elemnt will be inserted in the open/free index
 
-     virtual void removeElement(int element) = 0;
-     // this function removes an lement in the list
-     //postcondition : The element passed an argument will be removed from the array if found
+     void removeElement(int loc);
+     // this function removes an element in the list
+     //postcondition : The location passed an argument will be removed from the array if found
      //the length is decremented by one
 
      void clearList();
