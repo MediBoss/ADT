@@ -1,5 +1,7 @@
 //THIS IS THE HEADER FILE
 
+//Abstract functions will be implemented in sortedList and unsortedList clss
+
 class List
 {
 
@@ -26,7 +28,7 @@ class List
      //postcondition : The element is replaced at loc
 
 
-     int searchList(int item)const;
+     virtual int searchList(int item)const;
      // this function searches the list for a specific element (integer)
      //post condition : The index/position/location of the item is returned
 
@@ -42,7 +44,7 @@ class List
      // this function will implement the selction sort to arrange the array
      //postcondition : The list will be sorted in ascending order
 
-     void insertElement(int new_element);
+     virtual void insertElement(int new_element);
      // this function adds an element in the list
      //postcondition : The new elemnt will be inserted in the open/free index
 
