@@ -1,4 +1,4 @@
-//THIS IS THE IMPLEMENTATION FILE
+/THIS IS THE IMPLEMENTATION FILE
 
 #include "source.h"
 #include <iostream>
@@ -55,7 +55,7 @@ int List :: listSize() const{
 }
 
 //this function prints each element of the list
-void List :: printList(){
+void List :: print(){
   //code goes here
   for(int i = 0; i < this->length; i++){
     std::cout<<this->list[i] <<std::endl;
@@ -75,12 +75,16 @@ bool list :: isItemEqualAt(int elem, int loc)const{
 
 //this function removes an elemnet from the array
 //@param elem is the element  to be remved from the list
-void List :: removeElement(int loc){
+void List :: removeElementAt(int loc){
 
  //****algorith*****
   //loop through the list
   //find the element
   // remove it by replacing it with 0
+
+}
+
+void List :: add(int item){
 
 }
 /*
@@ -165,7 +169,7 @@ void list :: replaceAt(int item, int loc){
 
 
 //this functions calls the destructor
-void List :: clearList(){
+void List :: clear(){
  //code goes here
   ~ListType();
 }
