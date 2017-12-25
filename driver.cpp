@@ -8,14 +8,8 @@ using namespace std;
 
 int main(){
     
-    int array[100];
-    int size;
-    
-    ListType myList(array,size); // an object of type ListType
-    
-    myList.isEmpty();
-    myList.isFull();
-    myList.sortList();
+  List list1(10);
+  List list2(10);
 
     return 0;
 }
