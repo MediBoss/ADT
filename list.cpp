@@ -1,25 +1,35 @@
-/THIS IS THE IMPLEMENTATION FILE
+//THIS IS THE IMPLEMENTATION FILE
 
 #include "source.h"
 #include <iostream>
 
 //implementation of the list class/ADT
-/*
-      //CONSTRUCTORS
+
+//this function checks if the array is empty
+//CONSTRUCTORS
 
 //constructor with parameters
-List::List(){
+List::List(int size){
 
+  if(size < 0){
+
+    std::cout<<"The size must be greater than zero.\nSetting size to 100"<<std::endl;
+
+      maxSize = 100;
+  }else
+
+    maxSize = size; // the size/maxsize OF the array
+    length = 0; // the amount of elements IN the list
+
+    list = new int[maxSize];// creates an array of ints of a given size
 }
 
 //copy constructor
 List::List(const List& otherList){
 
 }
-*/
-//this function checks if the array is empty
 
-      //NON ABSTRACT FUNCTIONS
+
 bool List:: isEmpty() const{
 
 
@@ -89,7 +99,7 @@ void List :: removeElementAt(int loc){
     }
 }
 
-void list :: replaceAt(int item, int loc){
+void list :: replaceAt(int& item, int loc){
 
     if(loc < 0 || loc >= this->length){
       std::cout<<"ERROR : The Location is out of Range"<<std::endl;
@@ -99,6 +109,14 @@ void list :: replaceAt(int item, int loc){
 
       this->list[loc] = item;
 }
+
+
+void List :: clear(){
+
+    this->length  = 0;
+}
+
+
 /*
  void List :: swap(int& a, int& b){ //this function swaps two values. This is an helper function for the SearchList() function
 
@@ -170,13 +188,4 @@ int List :: searchList(int item) const{
 void List :: insertElement(int new_elem){
 
  //code goes here
-}
-
-
-
-
-//this functions calls the destructor
-void List :: clear(){
- //code goes here
-  ~ListType();
 }
