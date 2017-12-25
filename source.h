@@ -1,4 +1,4 @@
-//THIS IS THE HEADER FILE
+/THIS IS THE HEADER FILE
 
 //Abstract functions will be implemented in sortedList and unsortedList clss
 
@@ -23,12 +23,12 @@ class List
      //function to check the maximum list list
      //postcondition : an integer representing the max length is returned
 
-     virtual void replaceAt(int item, int loc) = 0;
+     void replaceAt(int& item, int loc);
      //function to replace a specified elemnt at a specified postcondition
      //postcondition : The element is replaced at loc
 
 
-     virtual int searchList(int item)const;
+     virtual int searchList(int item);
      // this function searches the list for a specific element (integer)
      //post condition : The index/position/location of the item is returned
 
@@ -36,17 +36,13 @@ class List
      // this is an helper function to the sort function to swap two values
      //postcondition : the values of a and b are swaped
 
-     bool isItemEqualAt(int item, int location) const;
+     bool isItemEqualAt(int elem, int location) const;
      //this function checks if the item at location is equal to item
      // a true or false statement is returned
 
      void sortList();
      // this function will implement the selction sort to arrange the array
      //postcondition : The list will be sorted in ascending order
-
-     virtual void add(int new_element);
-     // this function adds an element in the list
-     //postcondition : The new elemnt will be inserted in the open/free index
 
      void removeElementAt(int loc);
      // this function removes an element in the list
@@ -69,11 +65,11 @@ class List
      List(const List& otherList);
      //the copy constructor
 
-     virtual ~List();
+      ~List();
      // destructor
      //destroys/deallocates the list
 
- protected:
+ private:
 
      int *list; //the pointer varaible to store the list elements
      int length; // variable to store the length of the array
