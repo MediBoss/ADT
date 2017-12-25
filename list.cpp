@@ -15,18 +15,21 @@ List::List(int size){
 
     std::cout<<"The size must be greater than zero.\nSetting size to 100"<<std::endl;
 
-      maxSize = 100;
+      this->maxSize = 100;
   }else
 
-    maxSize = size; // the size/maxsize OF the array
-    length = 0; // the amount of elements IN the list
+    this->maxSize = size; // the size/maxsize OF the array
+    this->length = 0; // the amount of elements IN the list
 
-    list = new int[maxSize];// creates an array of ints of a given size
+    this->list = new int[maxSize];// creates an array of ints of a given size
 }
 
 //copy constructor
 List::List(const List& otherList){
 
+  this->maxSize = otherList.maxSize;
+  this->length  = otherList.lenght;
+  this->list = otherList.list;
 }
 
 
