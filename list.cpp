@@ -1,5 +1,4 @@
 //THIS IS THE IMPLEMENTATION FILE
-
 #include "source.h"
 #include <iostream>
 
@@ -28,8 +27,20 @@ List::List(int size){
 List::List(const List& otherList){
 
   this->maxSize = otherList.maxSize;
-  this->length  = otherList.lenght;
-  this->list = otherList.list;
+  this->length  = otherList.length;
+
+  list = new int[maxSize]; //creates a new array
+
+    for(int i = 0; i < this->length; i++){
+
+      list[i] = otherList.list[i];//copies evry elemnts in the other list
+    }
+}
+//the destructor : this deallocats the memory of every elemnts in the list
+
+List :: ~List(){
+
+  delete [] list;
 }
 
 
@@ -42,7 +53,9 @@ bool List:: isEmpty() const{
         if(this->length == 0){
           return true;
         }
-      return false;
+    }
+
+    return false;
 }
 
 //this function checks if the array is full
@@ -68,14 +81,14 @@ int List :: listSize() const{
 }
 
 //this function prints each element of the list
-void List :: print(){
+void List :: print() const{
   //code goes here
   for(int i = 0; i < this->length; i++){
     std::cout<<this->list[i] <<std::endl;
   }
 
 }
-bool list :: isItemEqualAt(int elem, int loc)const{
+bool List :: isItemEqualAt(int elem, int loc)const{
 
     if(loc < 0 || loc >= this->length){
 
@@ -83,7 +96,7 @@ bool list :: isItemEqualAt(int elem, int loc)const{
         return false;
     }else
 
-        return (this->list[loc] == item);//will return true or false
+        return (this->list[loc] == elem);//will return true or false
 }
 
 //this function removes an elemnet from the array
@@ -98,11 +111,11 @@ void List :: removeElementAt(int loc){
 
     for(int i = loc; i < this->length; i++){
         this->list[i] = this->list[i+1]; //shifting the elemnts to the left, which over writes the element at location
-        this->lenght--;//decrement the size of the list
+        this->length--;//decrement the size of the list
     }
 }
 
-void list :: replaceAt(int& item, int loc){
+void List :: replaceAt(int& item, int loc){
 
     if(loc < 0 || loc >= this->length){
       std::cout<<"ERROR : The Location is out of Range"<<std::endl;
@@ -120,7 +133,7 @@ void List :: clear(){
 }
 
 
-/*
+
  void List :: swap(int& a, int& b){ //this function swaps two values. This is an helper function for the SearchList() function
 
   int temp = b;
@@ -149,12 +162,12 @@ void List :: sortList(){
            }
       }
 }//end of list sorting
-*/
-/*
+
+
 
 //@param item is the integer to be searched
 //this func searches the list for a specific element
-int List :: searchList(int item) const{
+int List :: searchList(int item) {
 
   //imlementing binary search to save time and amount of looping
   //best scenario, array is sorted in ascding order,
@@ -168,11 +181,11 @@ int List :: searchList(int item) const{
 
     int middle = (int)(low+high)/2;// to store the middle index
 
-    int currValue= this->list[middle];// the current value
+    int currentValue= this->list[middle];// the current value
 
       if(currentValue == item){ //checks if the current
 
-        return currentIndex; // the position of the wnted number is returned
+        return middle; // the position of the wnted number is returned
 
       }else if(currentValue < item){ //if the current number is less
 
@@ -184,11 +197,4 @@ int List :: searchList(int item) const{
   }
 
   return -1; // -1 is returned if the elemnt is not in the list
-}
-
-//this function inserts an element in the array
-//@param elem the element to be inserted in the list
-void List :: insertElement(int new_elem){
-
- //code goes here
 }
