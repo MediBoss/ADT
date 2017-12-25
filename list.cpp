@@ -89,9 +89,15 @@ void List :: removeElementAt(int loc){
     }
 }
 
+void list :: replaceAt(int item, int loc){
 
-void List :: add(int item){
+    if(loc < 0 || loc >= this->length){
+      std::cout<<"ERROR : The Location is out of Range"<<std::endl;
+    }
 
+    else
+
+      this->list[loc] = item;
 }
 /*
  void List :: swap(int& a, int& b){ //this function swaps two values. This is an helper function for the SearchList() function
@@ -166,11 +172,6 @@ void List :: insertElement(int new_elem){
  //code goes here
 }
 
-
-void list :: replaceAt(int item, int loc){
-
-
-}
 
 
 
