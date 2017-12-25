@@ -74,15 +74,21 @@ bool list :: isItemEqualAt(int elem, int loc)const{
 }
 
 //this function removes an elemnet from the array
-//@param elem is the element  to be remved from the list
+//@param elem is the location of the element to be removed from the list
 void List :: removeElementAt(int loc){
 
- //****algorith*****
-  //loop through the list
-  //find the element
-  // remove it by replacing it with 0
 
+  if(loc < 0 || loc >= this->length){
+    std::cout<<"ERROR : The Location is Out of Range "<<std::endl;
+  }
+  else
+
+    for(int i = loc; i < this->length; i++){
+        this->list[i] = this->list[i+1]; //shifting the elemnts to the left, which over writes the element at location
+        this->lenght--;//decrement the size of the list
+    }
 }
+
 
 void List :: add(int item){
 
