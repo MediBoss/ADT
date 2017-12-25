@@ -1,4 +1,4 @@
-///THIS IS THE HEADER FILE
+//THIS IS THE HEADER FILE
 
 //Abstract functions will be implemented in sortedList and unsortedList clss
 
@@ -44,20 +44,20 @@ class List
      // this function will implement the selction sort to arrange the array
      //postcondition : The list will be sorted in ascending order
 
-     virtual void insertElement(int new_element);
+     virtual void add(int new_element);
      // this function adds an element in the list
      //postcondition : The new elemnt will be inserted in the open/free index
 
-     void removeElement(int loc);
+     void removeElementAt(int loc);
      // this function removes an element in the list
      //postcondition : The location passed an argument will be removed from the array if found
      //the length is decremented by one
 
-     void clearList();
+     void clear();
      // this function eradicates the entire list and its elements
      //postcondition : The list will be destroyed
 
-     void printList() const;
+     void print() const;
      // this function prints the entire list
      //postcondition : All elemnets of the list is printed
 
