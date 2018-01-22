@@ -1,4 +1,4 @@
-/THIS IS THE HEADER FILE
+//THIS IS THE HEADER FILE
 
 //Abstract functions will be implemented in sortedList and unsortedList clss
 
